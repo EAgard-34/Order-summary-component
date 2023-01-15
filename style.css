@@ -1,0 +1,115 @@
+body{
+    background-repeat: no-repeat;
+    background-color:hsl(225, 100%, 94%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+
+main{
+    display: flex;   
+    flex-direction: column;
+    max-width:375px;       
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.container{    
+     background-color: hsl(225, 100%, 98%);
+     padding: 0 20px 20px 20px;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     box-sizing: border-box;  
+     position: relative;
+     top: -3px;   
+  }
+
+.heading img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+       
+}
+
+.column-1{
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;        
+}
+
+.column-2{  
+    padding: 0 25px;
+    text-align: center;
+    color:hsl(224, 23%, 55%);
+    line-height: 2rem;
+    box-sizing: border-box;
+}
+
+.column-3{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: auto;  
+   box-sizing: border-box;
+   column-gap: 20px;
+   padding: 0 10px;
+   align-items: center;   
+}
+
+.column-3 img{
+  width: 60%;  
+  padding: 0 0 0 25px; 
+}
+
+.column-3-inner p:nth-of-type(1){
+    position: relative;
+    top:5px;
+    font-weight: 700;
+
+}
+.column-3-inner p:nth-of-type(2 ){
+    position: relative;
+    top: -5px;
+    color:hsl(224, 23%, 55%);
+
+}
+
+.column-3 div:nth-of-type(3){
+    padding: 0 0 0 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.column-3 div:nth-of-type(3):visited{
+    color: rgba(110, 28, 198, 0.52);
+}
+
+button{
+    display: inline-block;
+    border-radius: 7px;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor:pointer;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size:16px;
+    box-shadow: 5px 10px 10px hsla(245, 75%, 52%, 0.2);
+}
+
+button:hover{
+    background-color: rgba(110, 28, 198, 0.52);
+}
+.column-5{
+    text-align: center;
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
